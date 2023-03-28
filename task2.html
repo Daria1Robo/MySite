@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task 2</title>
+	<link rel="stylesheet" href="task2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://raw.githack.com/aterrien/jQuery-Knob/master/dist/jquery.knob.min.js"></script>
+
+	<link rel="stylesheet" href="alertify/alertify.core.css" />
+	<link rel="stylesheet" href="alertify/alertify.default.css" />
+	<script src="alertify/alertify.min.js"></script>
+
+	<script src="task2.js" defer></script>
+</head>
+<body>
+	<div class="wrapper">
+		<h1><i><u>Online-Quest</u></i></h1>
+		<h2>Task 2. Music Quiz</h2>
+		<article>
+			<p class="slideRules">Description & Rules ▼</p>
+			<div id="rules">
+				<p>
+					<ul style="list-style: none;">
+						<li>
+							<b>Music Quiz</b> - is a challenge in which you have to guess the soundtracks from different films and cartoons.
+						</li>
+						<br>
+						<li>
+							<b>Rules:</b>
+							<ul style="margin-left: 40px">
+								<li>Guess 10 soundtracks</li>
+								<li>After answering 10 soundtracks, you will have access to the next task</li>
+								<li>You will have only 5 minutes to solve this task after pressing the <b>Start</b> button</li>
+							</ul>
+						</li>
+					</ul>
+				</p>
+			</div>
+		</article>
+
+		<div class="taskProgress">
+			<p>Task progress:</p>
+			<input type="text" value="0" class="progress">
+		</div>
+
+		<div class="timeProgress">
+			<p>Time progrees</p>
+			<input type="text" value="0" class="time">
+		</div>
+
+		<div id="start">
+			<p>Start</p>
+		</div>
+
+		<div class="sound">
+			<!-- <img src="#" id="picture"> -->
+			<audio controls src="#" id="melody">
+				Your browser does not support the
+				<code>audio</code> element.
+			</audio>
+		</div>
+		<div class="answer"> 
+			<input type="text" id="inputTask" placeholder="Answer...">
+			<input type="button" value="Go!" id="btnTask">
+		</div>
+
+		<a href="../Task3/task3.html">
+			<div id="nextTask">
+				<p>Next Task →</p>
+			</div>
+		</a>
+		<a href="https://dropmefiles.com.ua/ua/v3XV2P6KZH">Скачать</a>
+
+	</div>
+</body>
+</html>
