@@ -75,7 +75,7 @@ $(document).ready(function(){
 			was.push(num);
 			if (progress<10) {
 				do{
-					num=Math.floor(1+Math.random()*5);
+					num=Math.floor(1+Math.random()*15);
 				} while(was.includes(num));
 				start_rebus(num);
 			}else{
